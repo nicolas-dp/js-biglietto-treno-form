@@ -17,69 +17,78 @@
 
         <div class="container text-center">
             <h1 class="p-3 text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-            <div class="card_generator shadow bg-body rounded d-flex justify-content-center pb-5">
-                <div class="row row-cols-1 row-cols-sm-3 g-3 align-items-center justify-content-center flex-wrap p-5">
+            <div class="card_generator shadow bg-body rounded d-flex
+                justify-content-center pb-5">
+                <div class="row row-cols-1 row-cols-sm-3 g-3 align-items-center
+                    justify-content-center flex-wrap p-5">
                     <div class="col">
                         <h6 class="col-form-label text_title_color">Nome Cognome</h6>
                         <input type="text" id="nome_cognome"
                             class="form-control border_color_red">
                     </div>
                     <div class="col">
-                        <h6 class="col-form-label text_title_color">KM da percorrere</h6>
+                        <h6 class="col-form-label text_title_color">KM da
+                            percorrere</h6>
                         <input type="text" id="km_da_percorrere"
                             class="form-control border_color_red">
                     </div>
                     <div class="col">
                         <h6 class="col-form-label text_title_color">Fascia d'età</h6>
-                        <select id="form_selector" class="form-select border_color_red"
+                        <select id="form_selector" class="form-select
+                            border_color_red"
                             aria-label="Default select
-                            example">
+                            example" onchange="myFunction()">
                             <option selected>Selezione fascia età</option>
-                            <option value="1">Minorenne</option>
-                            <option value="2">Over 65</option>
-                            <option value="3">Nessuna delle precedenti</option>
+                            <option >Minorenne</option>
+                            <option >Over 65</option>
+                            <option >Nessuna delle precedenti</option>
                         </select>
                     </div>
                     <div class="col">
                         <div class="button">
-                            <a href="#" class="btn btn_genera bg_button border_color_red text_title_color fw-bold">Genera</a>
-                            <a href="#" class="btn bg_button border_color_red text_title_color fw-bold">Annulla</a>
+                            <a href="#" class="btn btn_genera bg_button
+                                border_color_red text_title_color fw-bold">Genera</a>
+                            <a href="#" class="btn bg_button border_color_red
+                                text_title_color fw-bold">Annulla</a>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
 
 
         </div>
 
-        <div class="container text-center mt-5">
-            
+        <div class="section_ticket container text-center mt-5">
+
             <h1 class="p-3 text-white">IL TUO BIGLIETTO</h1>
-            <div class="card_generator shadow bg-body d-flex justify-content-center pb-5">
-                <div class="row row-cols-sm-5 g-3 align-items-center justify-content-center flex-wrap p-3">
+            <div class="card_generator shadow bg-body d-flex
+                justify-content-center pb-5">
+                <div class="row row-cols-sm-5 g-3 align-items-center
+                    justify-content-center flex-wrap p-3">
                     <div class="col bg_ticket">
                         <h2>NOME PASSEGGERO</h2>
-                        <span class="nome_passeggero"></span>
+                        <span class="nome_passeggero fs-2 fw-bold"></span>
                     </div>
-                    <div class="col">
+                    <div class="col align-self-center">
                         <h2>Offerta</h2>
-                        <span class="offerta"></span>
+                        <span class="offerta border-0 fs-2"></span>
+
                     </div>
                     <div class="col">
                         <h2>Carrozza</h2>
-                        <span class="carrozza"></span>
+                        <span class="carrozza fs-2"></span>
                     </div>
                     <div class="col">
                         <h2>Codice CP</h2>
-                        <span class="cod_cp"></span>
+                        <span class="cod_cp fs-2"></span>
                     </div>
                     <div class="col">
                         <h2>Costo biglietto</h2>
-                        <span class="costo_ticket"></span>
+                        <span class="costo_ticket fs-2"></span>
                     </div>
                 </div>
-            
+
             </div>
         </div>
 

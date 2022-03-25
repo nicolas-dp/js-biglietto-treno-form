@@ -34,3 +34,7 @@ body {
 .bg_ticket{
     background-color: var(--bg-details-p);
 }
+
+/* .section_ticket{
+    display: none;
+} */
