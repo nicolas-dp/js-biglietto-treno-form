@@ -1,0 +1,10 @@
+body{
+    background-image: url(../../img/bg_treni.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.prezzo_biglietto{
+    background-color: white;
+    
+}
