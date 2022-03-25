@@ -5,44 +5,35 @@ va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65.
 L'output del prezzo finale va scritto in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
  */
-// Chiedi all'utente nome e cognome
-let nome_cognome = document.getElementById("nome_cognome").value;
-/* console.log("Il nome del passeggero è: " + nome_cognome); */
-
-
-// Chiedi all'utente il numero dei KM da percorrere
-let numero_km = document.getElementById("km_da_percorrere").value;
-/* console.log("Il numero dei KM da percorrere è: " + numero_km); */
-
-if (isNaN(numero_km) || numero_km <= 0) {
-    alert("Devi inserire un valore numerico maggiore o uguale a 1");
-}
-
-// Chiedi all'utente l'età 
-
-let eta_utente = document.getElementById("form_selector").value;
-
-
-if (isNaN(eta_utente) || eta_utente <= 0 || eta_utente >= 101) {
-    alert("Devi inserire un valore numerico compreso tra 1 e 100");
-}
-
-//Calcoliamo il costo del biglietto al netto degli sconti
-
-const prezzo_totale = numero_km * 0.21;
+let prezzo_totale;
 let prezzo_sconto;
-console.log("Il prezzo totale senza sconti è: " + prezzo_totale + " €");
 
-//Calcoliamo il costo del biglietto applicando lo sconto
 
-if (eta_utente < 18) {
-    prezzo_sconto = prezzo_totale - (prezzo_totale * 0.2);
-} else if (eta_utente >= 65) {
-    prezzo_sconto = prezzo_totale - (prezzo_totale * 0.4);
-} else {
-    prezzo_sconto = prezzo_totale;
-}
+// Chiedi all'utente nome e cognome
+let full_name = document.getElementById("nome_cognome").value;
+    document.querySelector('.nome_passeggero').innerHTML = full_name;
+// Chiedi all'utente il numero dei KM da percorrere
+// GENERA NUMERO RANDOM
 
-console.log("Il prezzo scontato è: " + prezzo_sconto + " €");
+const elementButton = document.querySelector('.btn_genera');
 
-document.getElementById("prezzo").innerHTML = prezzo_sconto.toFixed(2) + " €";
+elementButton.addEventListener('click', function () {
+    
+
+    let numero_km = document.getElementById("km_da_percorrere").value;
+    let prezzo_totale = numero_km * 0.21;
+    let eta_utente = document.getElementById("form_selector").value;
+    console.log("Il prezzo totale senza sconti è: " + prezzo_totale + " €");
+    if (eta_utente == 1) {
+        prezzo_sconto = prezzo_totale - (prezzo_totale * 0.2);
+    } else if (eta_utente == 2) {
+        prezzo_sconto = prezzo_totale - (prezzo_totale * 0.4);
+    } else {
+        prezzo_sconto = prezzo_totale;
+    }
+    console.log("Il prezzo totale senza sconti è: " + prezzo_sconto + " €");
+    
+})
+
+
+

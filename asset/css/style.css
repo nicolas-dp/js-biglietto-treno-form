@@ -30,3 +30,7 @@ body {
 .bg_button{
     background-color: var(--bg-button);
 }
+
+.bg_ticket{
+    background-color: var(--bg-details-p);
+}
