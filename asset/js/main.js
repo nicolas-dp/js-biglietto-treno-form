@@ -5,13 +5,14 @@ va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65.
 L'output del prezzo finale va scritto in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
  */
+// Chiedi all'utente nome e cognome
+let nome_cognome = document.getElementById("nome_cognome").value;
+/* console.log("Il nome del passeggero è: " + nome_cognome); */
 
 
 // Chiedi all'utente il numero dei KM da percorrere
-const numero_km = parseInt(prompt("Quanti KM dovrai percorrere?"));
-console.log("Il numero dei KM da percorrere è: " + numero_km);
-
-
+let numero_km = document.getElementById("km_da_percorrere").value;
+/* console.log("Il numero dei KM da percorrere è: " + numero_km); */
 
 if (isNaN(numero_km) || numero_km <= 0) {
     alert("Devi inserire un valore numerico maggiore o uguale a 1");
@@ -19,8 +20,8 @@ if (isNaN(numero_km) || numero_km <= 0) {
 
 // Chiedi all'utente l'età 
 
-const eta_utente = parseInt(prompt("Quanti anni hai?"));
-console.log("L'età dell'utente è: " + eta_utente);
+let eta_utente = document.getElementById("form_selector").value;
+
 
 if (isNaN(eta_utente) || eta_utente <= 0 || eta_utente >= 101) {
     alert("Devi inserire un valore numerico compreso tra 1 e 100");

@@ -16,19 +16,44 @@
     <body>
 
         <div class="container text-center">
-            <h1 class="p-3">Biglietteria</h1>
-
-            <div class="text_body d-flex justify-content-center align-items-center gap-3 p-5">
-                <span> Prezzo Biglietto</span>
-                <div id="prezzo" class="prezzo_biglietto p-2 d-inline-block fw-bold rounded-3 border border-3 border-dark">
-
+            <h1 class="p-3 text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="card_generator shadow bg-body rounded d-flex justify-content-center pb-5">
+                <div class="row row-cols-1 row-cols-sm-3 g-3 align-items-center justify-content-center flex-wrap p-5">
+                    <div class="col">
+                        <h6 class="col-form-label text_title_color">Nome Cognome</h6>
+                        <input type="text" id="nome_cognome"
+                            class="form-control border_color_red">
+                    </div>
+                    <div class="col">
+                        <h6 class="col-form-label text_title_color">KM da percorrere</h6>
+                        <input type="text" id="km_da_percorrere"
+                            class="form-control border_color_red">
+                    </div>
+                    <div class="col">
+                        <h6 class="col-form-label text_title_color">Fascia d'età</h6>
+                        <select id="form_selector" class="form-select border_color_red"
+                            aria-label="Default select
+                            example">
+                            <option selected>Selezione fascia età</option>
+                            <option value="1">Minorenne</option>
+                            <option value="2">Over 65</option>
+                            <option value="3">Nessuna delle precedenti</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <div class="button">
+                            <a href="#" class="btn bg_button border_color_red text_title_color fw-bold">Genera</a>
+                            <a href="#" class="btn bg_button border_color_red text_title_color fw-bold">Annulla</a>
+                        </div>
+                    </div>
+                    
                 </div>
                 
+
+
             </div>
-            <div class="button">
-                <a href="#" class="btn btn-dark">Paga qui</a>
-            </div>
-            
+
+
         </div>
 
         <script src="./asset/js/main.js"></script>

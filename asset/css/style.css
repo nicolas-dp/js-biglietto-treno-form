@@ -1,8 +1,32 @@
-body{
-    background-color: brown;
+:root {
+    --bg-details-p: #808080;
+    --bg-page: #B91450;
+    --bg-button: #CCCCCC;
+    
+
 }
 
-.prezzo_biglietto{
+
+body {
+    background-color: var(--bg-page)
+}
+
+.prezzo_biglietto {
     background-color: white;
-    
+
+}
+
+.text_title_color{
+    color: var(--bg-page);
+}
+
+.border_color_red{
+    border: 2px solid var(--bg-page);
+}
+.card_generator {
+    background-color: white;
+}
+
+.bg_button{
+    background-color: var(--bg-button);
 }
